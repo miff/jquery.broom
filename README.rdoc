@@ -8,19 +8,12 @@ $('yours_input_box').broom();
 == Options
 
 'bcolor' 		:'#fff' // Or any Hex color
-
 'color' 		:'#000' // Or any Hex color
-
 'icon' 			:'URL_TO_THE_DEFAULT_ICON_broom.png' // Icon to represent broom
-
 'divclass' 		:'inputBox' // Default class name for div
-
 'inpclass'		:'inputBox' // Default class name for input
-
 'width'			:120 // Of div. Only number
-
 'border'		:'1px solid #333', // In single line
-
 
 == Authors
 {miff} [http://www.miffmedia.com]
