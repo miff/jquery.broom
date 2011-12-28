@@ -32,7 +32,7 @@
 			var fwidth = settings['width']-34;
 			$this.replaceWith(
 				'<div class="'+settings['divclass']+'" style="border:'+settings['border']+';color:'+settings['color']+';background-color:'+settings['bcolor']+';padding: 2px;margin:2px;width:'+settings['width']+'px;">'
-					+'<input style="width:'+fwidth+'px;background-color:transparent;border:medium none;" type="text" name="'+name+'" id="'+id+'" value="'+val+'"/>'
+					+'<input style="outline:none;width:'+fwidth+'px;background-color:transparent;border:medium none;" type="text" name="'+name+'" id="'+id+'" value="'+val+'"/>'
 					+'<a href="javascript:;" onclick="$(\'#'+id+'\').val(\'\');">'
 						+'<img width="16" height="16" style="margin:4px;vertical-align: middle;float:'+settings['location']+'" src="'+settings['icon']+'" alt="'+settings['icon']+'"/>'
 					+'</a>'
