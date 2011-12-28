@@ -23,7 +23,7 @@
 			'divclass' 		:'inputBox', // Default class name for div
 			'inpclass'		:'inputBox', // Default class name for input
 			'width'			:120, // Of div. Only number
-			'border'		:'1px solid #333', // In single line, it's mutch nicer :)
+			'border'		:'1px solid #333', // In single line:)
 		}, options);
 		return this.each(function(){
 			var name = $this.attr('name');
