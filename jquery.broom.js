@@ -32,6 +32,7 @@
 			var val = $this.attr('value');
 			var fwidth = settings['width']-34;
 			var placeholder = $this.attr('placeholder');
+			if(!placeholder) placeholder = settings['pholder'];
 			$this.replaceWith(
 				'<div class="'+settings['divclass']+'" style="border:'+settings['border']+';color:'+settings['color']+';background-color:'+settings['bcolor']+';padding: 2px;margin:2px;width:'+settings['width']+'px;">'
 					+'<input style="outline:none;width:'+fwidth+'px;background-color:transparent;border:medium none;" placeholder="'+placeholder+'" type="text" name="'+name+'" id="'+id+'" value="'+val+'"/>'
