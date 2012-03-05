@@ -24,15 +24,17 @@
 			'inpclass'		:'inputBox', // Default class name for input
 			'width'			:120, // Of div. Only number
 			'border'		:'1px solid #333', // In single line:)
+			'pholder'		:''// Placeholder
 		}, options);
 		return this.each(function(){
 			var name = $this.attr('name');
 			var id = $this.attr('id');
 			var val = $this.attr('value');
 			var fwidth = settings['width']-34;
+			var placeholder = $this.attr('placeholder');
 			$this.replaceWith(
 				'<div class="'+settings['divclass']+'" style="border:'+settings['border']+';color:'+settings['color']+';background-color:'+settings['bcolor']+';padding: 2px;margin:2px;width:'+settings['width']+'px;">'
-					+'<input style="outline:none;width:'+fwidth+'px;background-color:transparent;border:medium none;" type="text" name="'+name+'" id="'+id+'" value="'+val+'"/>'
+					+'<input style="outline:none;width:'+fwidth+'px;background-color:transparent;border:medium none;" placeholder="'+placeholder+'" type="text" name="'+name+'" id="'+id+'" value="'+val+'"/>'
 					+'<a href="javascript:;" onclick="$(\'#'+id+'\').val(\'\');">'
 						+'<img width="16" height="16" style="margin:4px;vertical-align: middle;float:'+settings['location']+'" src="'+settings['icon']+'" alt="'+settings['icon']+'"/>'
 					+'</a>'
